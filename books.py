@@ -6,3 +6,6 @@ app = FastAPI()
 def read_root():
     return {"message": "Welcome to the Book API!"}
 
+@app.get("/hello")
+def read():
+    return {"message": "Yaswanth"}
